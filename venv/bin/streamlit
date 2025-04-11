@@ -1,4 +1,4 @@
-#!/Users/bhanureddymallavarapu/Desktop/SENTIFIX/sentifix/sentifix/venv/bin/python3
+#!/Users/darrshanarajn/Projects/SentiFix/sentifix/venv/bin/python3
 # -*- coding: utf-8 -*-
 import re
 import sys
