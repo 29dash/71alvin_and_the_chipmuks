@@ -84,7 +84,7 @@ SentiFix/
 
 ##  Team
 
-Built by Bhanu Reddy and team at **Quantum Hacks 2025** 🧠🚀
+Built by Bhanu Reddy , Darrshana Rajn and Sani Anjana at **Quantum Hacks 2025** 
 
 ---
 
