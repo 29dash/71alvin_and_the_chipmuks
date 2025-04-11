@@ -1,0 +1,7 @@
+message,category
+"I can't log into my account.","Login Issue"
+"My payment failed but money got deducted.","Payment Issue"
+"My delivery is late and I want a refund.","Delivery Issue"
+"The app crashes every time I open it.","Technical Issue"
+"I want to cancel my subscription immediately.","Account Management"
+"Why am I being charged twice this month?","Billing Issue"
