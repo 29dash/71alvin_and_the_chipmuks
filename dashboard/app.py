@@ -1,6 +1,14 @@
 import os
 import sys
+
+# Add the absolute path to the src folder
+SRC_PATH = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'src'))
+sys.path.append(SRC_PATH)
+
+from src.emailer import send_ticket_email
+
 import streamlit as st
+<<<<<<< HEAD
 from streamlit_lottie import st_lottie
 import json
 import pyperclip
@@ -9,11 +17,14 @@ import pyperclip
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 
 # Import custom modules
+=======
+>>>>>>> 2773d2d (Fix module imports and email integration)
 from src.classifier import classify_message
 from src.sentiment_analysis import analyze_sentiment
 from src.auto_responder import generate_response
 from src.ticket_generator import generate_ticket
 
+<<<<<<< HEAD
 
 # Optional: Load a Lottie animation
 def load_lottiefile(filepath: str):
@@ -81,3 +92,44 @@ st.markdown("""---
     SentiFix © 2025
 </div>  
 """, unsafe_allow_html=True)
+=======
+st.write("App loaded successfully!")
+
+st.title("SentiFix Dashboard 💬🔧")
+
+# User input box
+user_input = st.text_area("Enter a customer message:")
+
+if st.button("Analyze Message"):
+    if user_input:
+        # Step 1: Classify the message type
+        message_type = classify_message(user_input)
+        
+        # Step 2: Analyze sentiment
+        sentiment_label, polarity = analyze_sentiment(user_input)
+
+        # Step 3: Generate automated response
+        response = generate_response(user_input)
+
+        # Step 4: Generate ticket
+        ticket_id = generate_ticket(user_input)
+
+        # Step 5: Email the ticket to support
+        send_ticket_email(
+            to_email="bhanureddym060305@gmail.com",
+            ticket_id=ticket_id,
+            category=message_type,
+            sentiment=sentiment_label,
+            polarity=polarity,
+            response=response
+        )
+
+        # Display results
+        st.subheader("📌 Results")
+        st.markdown(f"**Message Type:** {message_type}")
+        st.markdown(f"**Sentiment:** {sentiment_label} (Polarity: {polarity:.2f})")
+        st.markdown(f"**Auto Response:** {response}")
+        st.markdown(f"**Ticket ID:** `{ticket_id}`")
+    else:
+        st.warning("Please enter a message to analyze.")
+>>>>>>> 2773d2d (Fix module imports and email integration)
