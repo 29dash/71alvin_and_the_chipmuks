@@ -1,21 +1,21 @@
-# SentiFix 🚨📬
+# SentiFix 
 
 **SentiFix** is an intelligent, emotion-aware service agent that processes customer queries from platforms like Email and WhatsApp. It classifies the issue using machine learning, gauges sentiment to determine urgency, generates smart responses, and assigns the ticket to the relevant support group — all through a beautiful real-time dashboard.
 
 ---
 
-## 🔍 Key Features
+##  Key Features
 
-- 🔍 Issue classification with ML (Login, Billing, Delivery, etc.)
-- 😠 Sentiment detection to flag urgency (Frustrated, Calm, Angry)
-- 🤖 Auto-generated customer replies (GPT-like)
-- 🎟️ Ticket creation & team assignment
-- 📊 Real-time ticket feed on dashboard
-- 🌐 Streamlit frontend for demo/demo UI
+-  Issue classification with ML (Login, Billing, Delivery, etc.)
+-  Sentiment detection to flag urgency (Frustrated, Calm, Angry)
+-  Auto-generated customer replies (GPT-like)
+-  Ticket creation & team assignment
+-  Real-time ticket feed on dashboard
+-  Streamlit frontend for demo/demo UI
 
 ---
 
-## 📂 Folder Structure
+##  Folder Structure
 
 ```
 SentiFix/
@@ -38,7 +38,7 @@ SentiFix/
 
 ---
 
-## ⚙️ Setup Instructions
+##  Setup Instructions
 
 1. **Clone the repository**
    ```bash
@@ -69,7 +69,7 @@ SentiFix/
 
 ---
 
-## 🛣️ Roadmap
+## Roadmap
 
 - [x] ML-based issue categorization
 - [x] Sentiment & urgency detection
@@ -82,12 +82,12 @@ SentiFix/
 
 ---
 
-## 👩‍💻 Team
+##  Team
 
 Built by Bhanu Reddy and team at **Quantum Hacks 2025** 🧠🚀
 
 ---
 
-## 📄 License
+##  License
 
 This project is licensed under the MIT License.
