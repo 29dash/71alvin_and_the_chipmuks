@@ -4,6 +4,7 @@ import json
 import pyperclip
 import streamlit as st
 from streamlit_lottie import st_lottie
+from src.classifier import classify_message
 
 # Add the absolute path to the src folder
 SRC_PATH = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'src'))
